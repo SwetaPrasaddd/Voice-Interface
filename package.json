@@ -1,0 +1,39 @@
+{
+  "name": "revolt-voice-interface",
+  "version": "1.0.0",
+  "description": "A real-time conversational voice interface for Revolt Motors using Gemini API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --version && npm list"
+  },
+  "keywords": [
+    "voice-assistant",
+    "gemini-api",
+    "revolt-motors",
+    "speech-recognition",
+    "websocket",
+    "real-time",
+    "ai-chatbot"
+  ],
+  "author": "Voice Interface Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.1",
+    "express": "^4.19.2",
+    "ws": "^8.17.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/revolt-voice-interface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/revolt-voice-interface/issues"
+  },
+  "homepage": "https://github.com/yourusername/revolt-voice-interface#readme"
+}

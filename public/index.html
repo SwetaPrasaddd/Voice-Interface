@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolt Motors Voice Assistant</title>
+    <style>
+        /* Enhanced styling for a professional look */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        
+        h1 {
+            margin-top: 0;
+            color: #1c1e21;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        
+        #status {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #606770;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        #toggleButton, #interruptButton {
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            transition: all 0.3s ease;
+            min-width: 140px;
+        }
+        
+        #toggleButton {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+        }
+        
+        #toggleButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        
+        #toggleButton.recording {
+            background: linear-gradient(45deg, #dc3545, #a71d2a);
+            animation: pulse 2s infinite;
+        }
+        
+        #interruptButton {
+            background: linear-gradient(45deg, #ffc107, #e0a800);
+            display: none;
+        }
+        
+        #interruptButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        .mic-icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏍️ Revolt Motors</h1>
+        <p class="subtitle">AI Voice Assistant</p>
+        <div id="status">Click "Start Chat" to begin talking with Rev!</div>
+        <div class="button-container">
+            <button id="toggleButton">
+                <span class="mic-icon">🎤</span>Start Chat
+            </button>
+            <button id="interruptButton">
+                <span class="mic-icon">✋</span>Interrupt
+            </button>
+        </div>
+        <div class="footer">
+            Ask me anything about Revolt Motors electric motorcycles!
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+
+</body>
+</html>
