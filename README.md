@@ -2,6 +2,19 @@
 
 A real-time conversational voice interface built with the Gemini API, replicating the functionality of the Revolt Motors chatbot with advanced interruption capabilities.
 
+
+### ✅ Core Requirements Checklist
+
+| Requirement | Status | Notes |
+| :--- | :---: | :--- |
+| **Real-time Voice Conversation** | ✅ | Natural, low-latency voice interaction. |
+| **Advanced Interruption** | ✅ | User can interrupt the AI while it is speaking. |
+| **Server-to-Server Architecture** | ✅ | Secure backend (API key is never exposed to the client). |
+| **Revolt Motors Specialization** | ✅ | AI is focused on brand-specific topics via a system prompt. |
+| **Node.js/Express Backend** | ✅ | Meets the required technology stack. |
+
+---
+
 ## 🚀 Features
 
 - **Real-time Voice Conversation**: Natural voice interactions with the AI assistant
